@@ -6,6 +6,8 @@
   "scripts": {
     "ht": "node ./games/headsortails",
     "ht2": "node ./games/headsortails2",
+    "news": "node ./news_parser/news",
+    "translate": "node ./translate/translate",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,6 +17,8 @@
   "author": "AlexMedvedev",
   "license": "ISC",
   "dependencies": {
-    "prompt": "^1.0.0"
+    "cheerio": "^1.0.0-rc.3",
+    "prompt": "^1.0.0",
+    "request": "^2.88.0"
   }
 }
