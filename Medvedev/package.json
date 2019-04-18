@@ -8,6 +8,7 @@
     "ht2": "node ./games/headsortails2",
     "news": "node ./news_parser/news",
     "translate": "node ./translate/translate",
+    "beeper": "node ./beeper",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +18,7 @@
   "author": "AlexMedvedev",
   "license": "ISC",
   "dependencies": {
+    "ansi": "^0.3.1",
     "cheerio": "^1.0.0-rc.3",
     "prompt": "^1.0.0",
     "request": "^2.88.0"
