@@ -7,7 +7,7 @@ const rl = readline.createInterface({
   output: process.stdout
 })
 
-console.log(colors.blue(
+console.log(colors.yellow(
 `Добро пожаловать. Здесь занимаются переводом.
 Чтобы продолжить нажмите enter. Для выхода
 введите n, exit или no`
@@ -23,7 +23,7 @@ rl.on('line', (cmd) => {
       request(site, (err, response, html) => {
         if(!err && response.statusCode === 200) {
           console.log(colors.green(JSON.parse(html).text[0]), '\n');
-          console.log(colors.blue('Переведём что-нибудь ещё? (y или нажатие на Enter - да, n, no, exit = нет'));
+          console.log(colors.yellow('Переведём что-нибудь ещё? (y или нажатие на Enter - да, n, no, exit = нет'));
         } else {
         console.log('oшибка')
       }

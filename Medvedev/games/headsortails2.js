@@ -11,10 +11,10 @@ const rl = readline.createInterface({
 let score = 0;
 let tries = 0;
 const inputInstruction = `
-input: ${colors.blue('yes')} or ${colors.blue('y')} to play one more time, ${colors.blue('score')} for score, 
-${colors.blue('no')} or ${colors.blue('n')} or ${colors.blue('exit')} to leave the game`;
+input: ${colors.green('yes')} or ${colors.green('y')} to play one more time, ${colors.green('score')} for score, 
+${colors.green('no')} or ${colors.green('n')} or ${colors.green('exit')} to leave the game`;
 
-console.log(colors.rainbow('Hi, Shall we play head or tail game?'));
+console.log(colors.yellow('Hi, Shall we play head or tail game?'));
 console.log('possible answers: yes or y, no or n, exit');
 
 rl.on('line', (cmd) => {
@@ -29,7 +29,7 @@ rl.on('line', (cmd) => {
     rl.close();
   } else if (cmd === 'yes' || cmd === 'y') {
     const guess =
-      `    ${colors.rainbow('What does the coin says?)) Head or tail?')} 
+      `    ${colors.yellow('What does the coin says?)) Head or tail?')} 
     Just input: ${colors.red('head')} or ${colors.red('h')}, ${colors.green('tail')} or ${colors.green('t')} and check your luck
     `;
     rl.question(guess, (answer) => {
@@ -43,7 +43,7 @@ rl.on('line', (cmd) => {
             console.log('file score.txt writing error')
           }
         })
-        console.log(`${colors.rainbow('Congratulations.')} Coin shows: ${coinFlipResult} Your answer: ${answer}`)
+        console.log(`${colors.yellow('Congratulations.')} Coin shows: ${coinFlipResult} Your answer: ${answer}`)
         console.log(inputInstruction);
       } else {
         tries++;
@@ -62,7 +62,7 @@ rl.on('line', (cmd) => {
       if (err) {
         throw err("you either haven't guessed yet, or file doesn't exist")
       }
-      console.log(colors.rainbow(data.toString()));
+      console.log(colors.yellow(data.toString()));
       console.log(inputInstruction);
     })
   }
