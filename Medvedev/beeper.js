@@ -8,7 +8,6 @@ const rl = readline.createInterface({
   output: process.stdout
 })
 
-
 console.log(colors.green('Hi, Shall we set timout to send you beep signals after?'));
 console.log('possible answers: yes or y, no or n, exit');
 
