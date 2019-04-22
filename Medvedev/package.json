@@ -7,6 +7,7 @@
     "ht": "node ./games/headsortails",
     "ht2": "node ./games/headsortails2",
     "news": "node ./news_parser/news",
+    "news-rbc": "node ./news_parser/async-news",
     "translate": "node ./translate/translate",
     "beeper": "node ./beeper",
     "test": "echo \"Error: no test specified\" && exit 1"
